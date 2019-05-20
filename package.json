@@ -2,9 +2,10 @@
   "name": "frontendtemplate",
   "version": "1.0.0",
   "description": "template",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config ./config/webpack.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/Ding95/frontendTemplate/issues"
   },
-  "homepage": "https://github.com/Ding95/frontendTemplate#readme"
+  "homepage": "https://github.com/Ding95/frontendTemplate#readme",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
 }
